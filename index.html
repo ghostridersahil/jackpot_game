@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+        background-image: url("images/table.png");
+        background-size: cover;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        
+    }
+    .container{
+        /* display: flex; */
+        inset-inline:block;
+        align-items: center;
+        /* height: 100vh; */
+        margin: 0;
+    }
+
+   
+    .heading{
+        font-size: 12vw;
+        color: goldenrod;
+        
+    }
+
+    #message-el {
+        font-style: italic;
+        font-size: 3vw;
+    }
+    #cards-el{
+        font-size: 2vw;
+    }
+    #sum-el{
+        font-size: 2vw;
+
+    }
+
+    button {
+        color: #016f32;
+        width: 30vw;
+        height: 7vh;
+        background: goldenrod;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        border: none;
+        font-size: 2vw;
+        border-radius: 2px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+
+    #player-el{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
